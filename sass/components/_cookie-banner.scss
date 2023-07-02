@@ -1,0 +1,25 @@
+.cookie--banner{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    display: flex;
+    padding: 20px;
+    background-color: $couleur4;
+    color: $couleur1;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        padding: 10px;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cookie-accept{
+        @media screen and (max-width: map-get($breakpoints,phone-down)){
+            align-self: flex-end;
+        }
+        
+    }
+}
