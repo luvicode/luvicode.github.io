@@ -1,0 +1,68 @@
+.divider--title{
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, $couleur3, transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 60px 0;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        height: 1.5px;
+        margin: 50px 0;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        height: 1px;
+        margin: 30px 0;
+    }
+    &__icone{
+        width: 80px;
+        height: 80px;
+        background-color: $white;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        border: 2px solid $couleur3;
+        position: absolute; 
+        z-index: 40;
+        @media screen and (max-width: map-get($breakpoints,tablet-down)){
+            width: 60px;
+            height: 60px;
+        }
+        @media screen and (max-width: map-get($breakpoints,phone-down)){
+            width: 50px;
+            height: 50px;
+        }   
+    }
+    
+}
+
+//Presentation
+.divider--icone1{
+    background-image: url(/public/images/icones/paillote.webp);
+}
+//Evenements
+.divider--icone2{
+    background-image: url(/public/images/icones/coktail.webp);
+}
+//INFORMATIONS 
+.divider--icone3{
+    background-image: url(/public/images/icones/horaires.webp);
+}
+// RESEAUX SOCIAUX 
+.divider--icone4{
+    background-image: url(/public/images/icones/suivez-nous.webp);
+}
+//CONTACT 
+.divider--icone5{
+    background-image: url(/public/images/icones/nous-contacter.webp);
+}
+//VOUS Y RENDRE
+.divider--icone6{
+    background-image: url(/public/images/icones/carte-et-localisation.webp);
+}
+//NOTRE CARTE
+.divider--icone7{
+    background-image: url(/public/images/icones/carte-des-vins.webp);
+}

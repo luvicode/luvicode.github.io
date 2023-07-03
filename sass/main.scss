@@ -1,0 +1,24 @@
+//utils
+@import "./utils/variables";
+//base
+@import "./base/global";
+@import "./base/typographie";
+//components
+@import "./components/scrollbar";
+@import "./components/btns";
+@import "./components/divider-title";
+@import "./components/icones";
+//layout
+@import "./layout/homeHeader";
+@import "./layout/events";
+@import "./layout/vousyrendre";
+@import "./layout/informations";
+@import "./layout/carte-menu";
+@import "./layout/follow";
+@import "./layout/form-contact";
+@import "./layout/fastContact";
+@import "./layout/footer";
+//pages
+@import "./pages/annexes";
+
+// @import "";

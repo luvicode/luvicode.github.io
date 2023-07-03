@@ -1,0 +1,160 @@
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/public/images/background/coucher-de-soleil-paillote-l-aria.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        height: 450px;
+        background-image: url(/public/images/background/coucher-de-soleil-paillote-l-aria-mini.webp);
+
+    }
+    .container--header{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .container--animation{
+            position: absolute;
+            top: 15%;
+            left: 8%;
+            width: 500px;
+            height: 400px;
+            overflow: hidden;
+            background: $couleur1;
+            opacity: 0.9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $radiusGlobal;
+            @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                width: 320px;
+                height: 200px;
+            }
+            @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                top: 15%;
+                left: 0%;
+            }
+            .box--logo{
+                width: 400px;
+                height: 300px;
+                @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                    width: 280px;
+                    height: 180px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .wave{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+                background: url(/public/images/background/wave.png);
+                background-size: 800px 50px;
+                @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                    height: 30px;
+                    background-size: 800px 30px;
+                }
+            }
+            .wave1{
+                animation: waveAnimation 30s linear infinite;
+                z-index: 1000;
+                opacity: 0.9;
+                animation-delay: 0s;
+                bottom: 0px;
+            }
+            .wave2{
+                animation: waveAnimation2 15s linear infinite;
+                z-index: 999;
+                opacity: 0.7;
+                animation-delay: -5s;
+                bottom: 5px;
+            }
+            .wave3{
+                animation: waveAnimation3 30s linear infinite;
+                z-index: 998;
+                opacity: 0.6;
+                animation-delay: -2s;
+                bottom: 15px;
+            }
+            @keyframes waveAnimation{
+                0%{
+                    background-position-x: 0;
+                }
+                100%{
+                    background-position-x:800px;
+                }
+            }
+            @keyframes waveAnimation2{
+                0%{
+                    background-position-x: 0;
+                }
+                100%{
+                    background-position-x: -800px;
+                }
+            }
+            @keyframes waveAnimation3{
+                0%{
+                    background-position-x: 0;
+                }
+                100%{
+                    background-position-x: -800px;
+                }
+            }
+        }
+        .container-title{
+            width: 100%;
+            padding: 20px;
+            height: auto;
+            background-color: $white;
+            opacity: 0.8;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                bottom: 30px;
+                padding: 10px;
+            }
+            @media screen and (max-width: map-get($breakpoints,phone-down)){
+                bottom: 2%;
+                padding: 0px;
+            }
+        }
+        .container--btns{
+            width: 400px;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid $couleur3;
+            border-radius: $radiusGlobal;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            top: 5%;
+            right: 5%;
+            background-color: $white;
+            opacity: 0.9;
+            z-index: 1000;
+            @media screen and (max-width: map-get($breakpoints,desktop-down)){
+                width: 350px;
+                height: 70px;
+            }
+            @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                width: 280px;
+                height: 50px;
+            }
+            @media screen and (max-width: map-get($breakpoints,phone-down)){
+                width: 200px;
+                height: 40px;
+                padding: 0px;
+                top: 1%;
+                right: 1%;
+            }
+        }
+    }
+}

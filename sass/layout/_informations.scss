@@ -1,0 +1,51 @@
+.box--information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 20px);
+    min-width: 320px;
+    height: auto;
+    padding: 40px;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        padding: 30px;    
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        padding: 10px;   
+    }
+    .card--horary{
+        width: 100%;
+        height: auto;
+        border: 1px solid $black;
+        border-radius: $radiusGlobal;
+        box-shadow: $boxshadow;
+        -webkit-box-shadow: $webkitShadow;
+        -moz-box-shadow: $mozBoxshadox;
+        padding: 20px;
+        border-radius: $radiusGlobal;
+        @media screen and (max-width: map-get($breakpoints,tablet-down)){
+            padding: 10px;
+        }
+        @media screen and (max-width: map-get($breakpoints,tablet-down)){
+            width: 280px;
+        } 
+    }
+    .card--meteo{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        border: 1px solid $black;
+        border-radius: $radiusGlobal;
+        box-shadow: $boxshadow;
+        -webkit-box-shadow: $webkitShadow;
+        -moz-box-shadow: $mozBoxshadox;
+    }
+}
+
+.container--informations{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

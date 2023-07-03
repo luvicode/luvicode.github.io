@@ -1,0 +1,15 @@
+.scroll-bar {
+    width : 0%;
+    height : 10px;
+    background-color : $couleur3;
+    position : fixed;
+    bottom : 0;
+    left : 0;
+    z-index : 4;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        height : 8px;
+    }
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        height : 5px;
+    }
+}

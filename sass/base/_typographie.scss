@@ -1,0 +1,68 @@
+h1,h2,h3{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+a,p,span, li, address{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+}
+a{
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+}
+h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color:$black;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        font-size: 2.4rem;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        font-size: 1.6rem;
+    }
+}
+h2{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        font-size: 2rem;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        font-size: 1.6rem;
+    }
+}
+h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        font-size: 1.2rem;
+    }
+}
+
+// @media screen and (max-width: map-get($breakpoints,desktop-down)){
+
+// }
+// @media screen and (max-width: map-get($breakpoints,tablet-down)){
+
+// }
+// @media screen and (max-width: map-get($breakpoints,phone-down)){
+
+// }
+// TITRE: font-family: 'Dancing Script', cursive;
+// TEXTE: font-family: 'Lato', sans-serif;
