@@ -11,6 +11,7 @@ const consent=document.getElementById('consent');
 const testhoney=document.getElementById('testhoney');
 
 
+
 //Scroll bar
 window.addEventListener("scroll", () =>{
     const {scrollTop, clientHeight, scrollHeight} = document.documentElement;
@@ -108,3 +109,4 @@ formContact.addEventListener("submit", function(e) {
     let formData= new FormData(formContact);
     xhr.send(formData);
 });
+
